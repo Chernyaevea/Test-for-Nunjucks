@@ -1,0 +1,12 @@
+<ol class="breadcrumb">
+  {% for page in breadcrumbs | reverse %}
+    <li class="breadcrumb-item"><a
+      {% if not loop.last %}
+        href={{page}}
+      {% else %}
+        class="active"
+      {% endif %}
+      >{{page}}
+    </a></li>
+  {% endfor %}
+</ol>

@@ -8,9 +8,16 @@
       "order":"0"
     },
     {
-      "title_ru": "Ваша страница",
-      "title_en": "Your page",
-      "alias": "your-page",
+      "title_ru": "Страница 1",
+      "title_en": "Page 1",
+      "alias": "page1",
+      "parent": "main",
+      "order": "1"
+    },
+    {
+      "title_ru": "Страница 2",
+      "title_en": "Page 2",
+      "alias": "page2",
       "parent": "main",
       "order": "1"
     },
