@@ -1,10 +1,15 @@
 
-<div class="header">
+
 	<nav class="navbar navbar-header bg-faded">
-		<a class="navbar-brand" href="#">{{title}}</a>
+		<h2>{{title}}</h2>
   	<form class="form-inline navbar-right" action="/search/str" method="post">
-    	<input class="form-control mr-sm-2" type="text" placeholder="Search">
-    	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    	<input class="form-control mr-sm-2" type="text" name="words" placeholder="Search">
+    	<button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
   	</form>
-</nav>
-</div>
+		{# <div class="search">
+      <form class="search-form" action="/search/str" method="post">
+        <input type="search" name="words">
+        <button type="submit" class="search-btn">искать</button>
+      </form>
+    </div> #}
+	</nav>
