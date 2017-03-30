@@ -1,10 +1,11 @@
-{% extends "templates/main.njk" %}
-{% block content %}
-<div class="row content">
-  {% for result in data %}
-    <a href="/page/{{result.alias}}">{{result.title}}</a>
-    <p>{{result.text}}</p>
-  {% endfor %}
+{% extends "templates/main.njk" %} {% block content %}
+<div class="row">
+    <div class="col m12">
+        <h5>Результаты поиска:</h5> {% for result in data %}
+        <a href="/page/{{result.alias}}">{{result.title}}</a>
+        <p>{{result.text}}</p>
+        {% endfor %}
+    </div>
 </div>
 
 

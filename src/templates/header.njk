@@ -1,15 +1,12 @@
-
-
-	<nav class="navbar navbar-header bg-faded">
-		<h2>{{title}}</h2>
-  	<form class="form-inline navbar-right" action="/search/str" method="post">
-    	<input class="form-control mr-sm-2" type="text" name="words" placeholder="Search">
-    	<button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
-  	</form>
-		{# <div class="search">
-      <form class="search-form" action="/search/str" method="post">
-        <input type="search" name="words">
-        <button type="submit" class="search-btn">искать</button>
-      </form>
-    </div> #}
-	</nav>
+<nav class="nav-wrapper">
+	<a href="#" class="brand-logo">{{title}}</a>
+	<form action="/search/str" method="post">
+		<div class="input-field right">
+			<input id="search" type="search" name="words" placeholder="Search">
+			<label class="label-icon" for="search">
+				<i class="material-icons">search</i>
+			</label>
+			<i class="material-icons">close</i>
+		</div>
+	</form>
+</nav>
